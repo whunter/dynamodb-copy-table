@@ -28,6 +28,13 @@ $ AWS_DEFAULT_REGION=us-east-1 DISABLE_CREATION=yes DISABLE_DATACOPY=yes \
 python dynamodb-copy-table.py src_table dst_table
 ```
 
+Lee's note: Just don't include the DISABLE_DATACOPY option at all. (if you set it to "no" it seems to skip the copy anyway) And that's why we're here, to copy data
+```shell
+$ AWS_DEFAULT_REGION=us-east-1 DISABLE_CREATION=yes \
+python dynamodb-copy-table.py src_table dst_table
+```
+
+
 #### Docker Image
 
 The docker image is available as [techgaun/dynamodb-copy-table:latest](https://hub.docker.com/r/techgaun/dynamodb-copy-table)
