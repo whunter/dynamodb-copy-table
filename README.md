@@ -36,8 +36,6 @@ $ AWS_DEFAULT_REGION=us-east-1 DISABLE_CREATION=yes \
 python dynamodb-copy-table.py src_table dst_table
 ```
 
-DISABLE_CREATION=yes \
-python dynamodb-copy-table.py Archive-77eik3yv7rbdbjhjemas6h7dmi-vtdlppprd Archive-3zhokzhyf5h65idooksolgk5f4-wlh
 
 #### Docker Image
 
