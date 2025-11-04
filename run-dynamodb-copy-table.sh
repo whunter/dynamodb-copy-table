@@ -1,12 +1,12 @@
 pip install -r requirements.txt --quiet
 
-src="-bxbkjhe235e3jcwcjcji5txvlm-vtdlpdev"
-dest="-klyfmzsofvdxbpzbih47hibzli-wlhoidc"
+src=""
+dest=""
 # example:
 # src="-ef4g5ek0flipflopjindw27blh-dev"
 
-# Embargo History
-for table in Archive Collection Collectionmap Site
+# Archive Collection Collectionmap Embargo History PageContent Site
+for table in Archive Collection Collectionmap Embargo History PageContent Site
  do
   echo "Copying $table$src to $table$dest"
   DISABLE_CREATION=yes python3 dynamodb-copy-table.py $table$src $table$dest
